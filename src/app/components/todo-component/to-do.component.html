@@ -1,0 +1,11 @@
+<div class="row todo-borderd">
+    <div class="col-md-1">
+        <input class="toggle" type="checkbox" (click)="changeTodoCompleteStatus()" [checked]="todo.complete" >
+    </div>
+    <div class="col-md-10"  >
+        <label [className]="todo.complete ? 'complete' : 'todo'">{{todo.title}} </label>
+    </div>
+    <div class="col-md-1">
+        <i class="fa fa-trash red" (click)="deleteTodo()"></i>
+    </div>
+</div>
